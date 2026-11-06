@@ -5,7 +5,7 @@ export  default function App(){
  return(
   <View style={homeStyle.conteiner}>
     {/* ใส่ข้อความ */}
-    <Text style={homeStyle.title}>Rattakrit</Text>
+    <Text style={homeStyle.title}>Rattakrit-yuki</Text>
 {/* ใส่ภาพ */}
 <Image source={require('@/assets/เด็กสาว.jpg')}
 style={{
