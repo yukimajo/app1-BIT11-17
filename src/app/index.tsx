@@ -5,7 +5,7 @@ export  default function App(){
  return(
   <View style={homeStyle.conteiner}>
     {/* ใส่ข้อความ */}
-    <Text style={homeStyle.title}>Rattakrit-yuki</Text>
+   
 {/* ใส่ภาพ */}
 <Image source={require('@/assets/rattakrit.jpg')}
 style={{
@@ -16,11 +16,13 @@ style={{
   borderColor:"lightblue",
   
   
-}}/>
-
- <View style={{flexDirection: "row"}}>
-  <Text>👀เกตัวพ่อ</Text>
-  <Text>☠️ตายๆ</Text>
+}}
+/>
+ <Text style={homeStyle.title}>Rattakrit-yuki</Text>
+ <View style={{flexDirection: "row"
+ }}>
+  <Text style={{color: "gray"}}>👀เกตัวพ่อ</Text>
+  <Text style={{color: "gray"}}>☠️ตายๆ</Text>
  </View>
  <View style={{flexDirection: "column",
   backgroundColor: "gainsboro",
@@ -31,13 +33,28 @@ style={{
  }}>
   <Text style={{
     marginTop:30,
-    marginLeft:10
+    marginLeft:10,
+    color:"gray",
   }}> ห้อง BIT1/1 เลขที่17 </Text>
-  <Text > Email: ratthakrit.kothom@e-tech.ac.th </Text>
-  <Text > Phone: 0838193010 </Text>
+  <Text style={{
+    marginTop:10,
+    marginLeft:10,
+    color:"gray",
+  }}> Email: ratthakrit.kothom@e-tech.ac.th </Text>
+  <Text style={{
+    marginTop:10,
+    marginLeft:10,
+    color:"gray",
+  }}> Phone: 0838193010 </Text>
  </View>
  <View>
- <Text style={homeStyle.title}>ภาพกิจกรรม</Text>
+ <Text style={{
+  color:"black",
+  fontSize:20,
+  fontStyle:"italic",
+    textAlign:"center",
+    right:220,
+ }}>ภาพกิจกรรม</Text>
  </View>
  <View style={{flexDirection: "row"}}>
  
@@ -91,7 +108,7 @@ const homeStyle = StyleSheet.create({
     alignItems:"center",
   },
   title:{
-    color: "white",
+    color: "black",
     fontSize: 32,
     fontWeight: 700,
     fontStyle:"italic",
